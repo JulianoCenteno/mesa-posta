@@ -1,0 +1,61 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600' width='100%' height='100%'>
+  <defs>
+    <radialGradient id='wood' cx='50%' cy='50%' r='70%'>
+      <stop offset='0%' stop-color='#f5ede4'/>
+      <stop offset='100%' stop-color='#e5d5c5'/>
+    </radialGradient>
+    <pattern id='jute' width='16' height='16' patternUnits='userSpaceOnUse'>
+      <rect width='16' height='16' fill='#d8be9b'/>
+      <path d='M0 8h16M8 0v16' stroke='#c8ab84' stroke-width='1.5'/>
+    </pattern>
+    <filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'>
+      <feDropShadow dx='2' dy='4' stdDeviation='6' flood-color='#4a3320' flood-opacity='0.25'/>
+    </filter>
+  </defs>
+  <rect width='600' height='600' fill='url(#wood)'/>
+  <!-- Charger plate background -->
+  <circle cx='300' cy='300' r='255' fill='#c2a67e' stroke='#9e8055' stroke-width='8' stroke-dasharray='12,6'/>
+  <!-- Jute scalloped body with white edge -->
+  <circle cx='300' cy='300' r='225' fill='url(#jute)' filter='url(#shadow)'/>
+  <circle cx='300' cy='300' r='225' fill='none' stroke='#ffffff' stroke-width='10' stroke-dasharray='35,10' stroke-linecap='round'/>
+  <!-- Butterfly motifs in rope -->
+  <g stroke='#8c6239' stroke-width='6' fill='none' stroke-linecap='round'>
+    <!-- 6 Butterflies placed radially -->
+    <g transform='translate(300,160) scale(0.7)'>
+      <path d='M-25,-20 C-45,-40 -50,0 -10,0 C-50,0 -40,35 -15,20 C0,10 0,-10 0,-20'/>
+      <path d='M25,-20 C45,-40 50,0 10,0 C50,0 40,35 15,20 C0,10 0,-10 0,-20'/>
+      <path d='M0,-25 L0,25' stroke-width='4'/>
+    </g>
+    <g transform='translate(420,230) rotate(60) scale(0.7)'>
+      <path d='M-25,-20 C-45,-40 -50,0 -10,0 C-50,0 -40,35 -15,20 C0,10 0,-10 0,-20'/>
+      <path d='M25,-20 C45,-40 50,0 10,0 C50,0 40,35 15,20 C0,10 0,-10 0,-20'/>
+      <path d='M0,-25 L0,25' stroke-width='4'/>
+    </g>
+    <g transform='translate(420,370) rotate(120) scale(0.7)'>
+      <path d='M-25,-20 C-45,-40 -50,0 -10,0 C-50,0 -40,35 -15,20 C0,10 0,-10 0,-20'/>
+      <path d='M25,-20 C45,-40 50,0 10,0 C50,0 40,35 15,20 C0,10 0,-10 0,-20'/>
+      <path d='M0,-25 L0,25' stroke-width='4'/>
+    </g>
+    <g transform='translate(300,440) rotate(180) scale(0.7)'>
+      <path d='M-25,-20 C-45,-40 -50,0 -10,0 C-50,0 -40,35 -15,20 C0,10 0,-10 0,-20'/>
+      <path d='M25,-20 C45,-40 50,0 10,0 C50,0 40,35 15,20 C0,10 0,-10 0,-20'/>
+      <path d='M0,-25 L0,25' stroke-width='4'/>
+    </g>
+    <g transform='translate(180,370) rotate(240) scale(0.7)'>
+      <path d='M-25,-20 C-45,-40 -50,0 -10,0 C-50,0 -40,35 -15,20 C0,10 0,-10 0,-20'/>
+      <path d='M25,-20 C45,-40 50,0 10,0 C50,0 40,35 15,20 C0,10 0,-10 0,-20'/>
+      <path d='M0,-25 L0,25' stroke-width='4'/>
+    </g>
+    <g transform='translate(180,230) rotate(300) scale(0.7)'>
+      <path d='M-25,-20 C-45,-40 -50,0 -10,0 C-50,0 -40,35 -15,20 C0,10 0,-10 0,-20'/>
+      <path d='M25,-20 C45,-40 50,0 10,0 C50,0 40,35 15,20 C0,10 0,-10 0,-20'/>
+      <path d='M0,-25 L0,25' stroke-width='4'/>
+    </g>
+  </g>
+  <!-- Table accessories -->
+  <circle cx='65' cy='95' r='38' fill='#ffffff' stroke='#d2b896' stroke-width='3'/>
+  <circle cx='65' cy='95' r='12' fill='#ffe8aa'/>
+  <rect x='510' y='180' width='16' height='260' rx='8' fill='#e2b474' stroke='#c29555' stroke-width='2'/>
+  <rect x='480' y='210' width='12' height='230' rx='6' fill='#d8d0c5'/>
+  <text x='300' y='575' font-family='sans-serif' font-size='16' font-weight='bold' fill='#8c6239' text-anchor='middle'>MOLDE #18 • JOGO AMERICANO BORBOLETA</text>
+</svg>
