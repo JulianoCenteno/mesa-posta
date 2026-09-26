@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="50%" stop-color="#FBF2E6" />
+      <stop offset="85%" stop-color="#EEDAC4" />
+      <stop offset="100%" stop-color="#D7B594" />
+    </radialGradient>
+
+    <!-- Gold Metallic Ribbon Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C521E" />
+      <stop offset="25%" stop-color="#DDA16B" />
+      <stop offset="50%" stop-color="#F9E2BE" />
+      <stop offset="75%" stop-color="#C27A3D" />
+      <stop offset="100%" stop-color="#7A390C" />
+    </linearGradient>
+
+    <!-- Bronze/Wood Gradient for Text -->
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#542407" />
+      <stop offset="50%" stop-color="#7B3A12" />
+      <stop offset="100%" stop-color="#3B1804" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="sealShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#542407" flood-opacity="0.22" />
+    </filter>
+    <filter id="ribbonShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#3B1804" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Group with shadow -->
+  <g filter="url(#sealShadow)">
+    <!-- Outer Starburst / Scalloped Ring (36 points) -->
+    <circle cx="250" cy="235" r="205" fill="#E8CDAF" />
+    <circle cx="250" cy="235" r="198" fill="url(#goldGradient)" />
+
+    <!-- Inner Cream Seal Body -->
+    <circle cx="250" cy="235" r="185" fill="url(#goldGlow)" stroke="#FFF8F0" stroke-width="3" />
+
+    <!-- Delicate Dashed Sewing Stitch Ring -->
+    <circle cx="250" cy="235" r="176" fill="none" stroke="#B86B35" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.85" />
+    <circle cx="250" cy="235" r="170" fill="none" stroke="#DDA16B" stroke-width="1.2" opacity="0.6" />
+
+    <!-- Stars row top -->
+    <g fill="#B86B35" transform="translate(250, 96)">
+      <polygon points="0,-7 2.2,-2.2 7,-2.2 3.2,1.2 4.7,6 0,2.8 -4.7,6 -3.2,1.2 -7,-2.2 -2.2,-2.2" />
+      <polygon points="-24,-5 -22.2,-0.5 -17,-0.5 -20.8,2.7 -19.3,7.5 -24,4.3 -28.7,7.5 -27.2,2.7 -31,-0.5 -25.8,-0.5" transform="scale(0.8) translate(5, -2)" />
+      <polygon points="24,-5 25.8,-0.5 31,-0.5 27.2,2.7 28.7,7.5 24,4.3 19.3,7.5 20.8,2.7 17,-0.5 22.2,-0.5" transform="scale(0.8) translate(-5, -2)" />
+    </g>
+
+    <!-- Top Text: GARANTIA INCONDICIONAL -->
+    <text x="250" y="128" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14.5" font-weight="900" fill="#8D4A1A" letter-spacing="3.5">
+      GARANTIA
+    </text>
+    <text x="250" y="146" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#A86230" letter-spacing="2.8">
+      INCONDICIONAL
+    </text>
+
+    <!-- Big Number 30 -->
+    <text x="250" y="248" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="112" font-weight="900" fill="url(#woodGradient)" letter-spacing="-3">
+      30
+    </text>
+
+    <!-- DIAS -->
+    <text x="250" y="282" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="21" font-weight="900" fill="#66300C" letter-spacing="6">
+      DIAS
+    </text>
+
+    <!-- Decorative divider line with diamond -->
+    <line x1="165" y1="298" x2="225" y2="298" stroke="#B86B35" stroke-width="1.5" stroke-linecap="round" />
+    <polygon points="250,295 253,298 250,301 247,298" fill="#8D4A1A" />
+    <line x1="275" y1="298" x2="335" y2="298" stroke="#B86B35" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Subtext bottom inside circle -->
+    <text x="250" y="322" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="800" fill="#7A390C" letter-spacing="2.5">
+      100% DE SATISFAÇÃO
+    </text>
+    <text x="250" y="338" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#9C521E" letter-spacing="1.5">
+      OU SEU DINHEIRO DE VOLTA
+    </text>
+  </g>
+
+  <!-- Bottom Elegant Ribbon Banner -->
+  <g filter="url(#ribbonShadow)">
+    <!-- Ribbon tails left & right -->
+    <path d="M 60,405 L 105,385 L 105,435 L 60,455 Z" fill="#66300C" />
+    <path d="M 440,405 L 395,385 L 395,435 L 440,455 Z" fill="#66300C" />
+
+    <!-- Ribbon main body -->
+    <path d="M 90,388 L 410,388 C 420,388 426,394 423,404 L 412,438 C 410,444 404,448 396,448 L 104,448 C 96,448 90,444 88,438 L 77,404 C 74,394 80,388 90,388 Z" fill="url(#goldGradient)" stroke="#FFF1DE" stroke-width="2" />
+
+    <!-- Ribbon border detail -->
+    <rect x="100" y="395" width="300" height="46" rx="6" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.75" />
+
+    <!-- Ribbon Text: RISCO ZERO -->
+    <text x="250" y="424" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="17" font-weight="900" fill="#FFFFFF" letter-spacing="4">
+      ★ RISCO ZERO ★
+    </text>
+  </g>
+</svg>
